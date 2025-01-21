@@ -35,9 +35,9 @@ project:
 site:
   template: book-theme
   options:
-    favicon: assets/favicon.ico
-    logo: assets/logo.svg
-    logo_dark: assets/logo.svg
+    favicon: favicon.ico
+    logo: logo.svg
+    logo_dark: logo.svg
   actions:
     - title: Syllabus
       url: assets/syllabus.pdf
