@@ -4,7 +4,7 @@ venue: Modules
 downloads:
   - file: computer_arithmetic.md
     title: computer_arithmetic.md
-  - file: ../../_assets/computer_arithmetic.pdf
+  - file: ../../assets/computer_arithmetic.pdf
     title: computer_arithmetic.pdf
 ---
 
