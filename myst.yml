@@ -35,12 +35,12 @@ project:
 site:
   template: book-theme
   options:
-    favicon: _assets\favicon.ico
-    logo: _assets\logo.svg
-    logo_dark: _assets\logo.svg
+    favicon: assets/favicon.ico
+    logo: assets/logo.svg
+    logo_dark: assets/logo.svg
   actions:
     - title: Syllabus
-      url: _assets/syllabus.pdf
+      url: assets/syllabus.pdf
   nav:
     - title: Course Home 🏠
       url: https://canvas.pitt.edu/courses/301800
