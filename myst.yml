@@ -38,7 +38,7 @@ site:
     - slug: myst
       path: .
   domains:
-    - jacob_cunningham-myst_project.curve.space
+    - jacob_cunningham-me2060.curve.space
   options:
     favicon: _assets\favicon.ico
     logo: _assets\logo.svg
