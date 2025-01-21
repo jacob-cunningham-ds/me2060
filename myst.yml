@@ -34,11 +34,6 @@ project:
         - file: projects/index.md
 site:
   template: book-theme
-  projects:
-    - slug: me2060
-      path: .
-  domains:
-    - jacob_cunningham-me2060.curve.space
   options:
     favicon: _assets\favicon.ico
     logo: _assets\logo.svg
