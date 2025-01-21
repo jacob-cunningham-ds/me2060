@@ -1,0 +1,11 @@
+# Ignore my environment
+env/
+
+# Ignore any jupyter notebook checkpoints
+**/.ipynb_checkpoints/
+
+# Ignore the references folders (e.g., binary files)
+**/ref/
+
+# Ignore the build folder
+_build/

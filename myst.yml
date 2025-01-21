@@ -1,0 +1,79 @@
+version: 1
+project:
+  id: 63f4e43a-1d0c-450d-80f8-6f78e6c8c211
+  keywords:
+    - Numerical Methods
+    - Mechanical Engineering
+  author:
+    - name: Jacob Cunningham
+      email: jjc132@pitt.edu
+      github: jacob-cunningham-ds
+  open_access: true
+  license: CC-BY-4.0
+  subject: ME 2060
+  toc:
+    - file: index.md
+    - title: Modules
+      children:
+        - file: modules/module_1/free_learning_resources.md
+        - title: Computer Arithmetic
+          children:
+            - file: modules/module_2/computer_arithmetic.md
+            - file: modules/module_2/floating_point_representation.md
+            - file: modules/module_2/condition_number.md
+            - file: modules/module_2/stability.md
+            - file: modules/module_2/cosine_example.ipynb
+            - file: modules/module_2/roundoff.ipynb
+            - file: modules/module_2/write_a_julia_function.ipynb
+            - file: modules/module_2/textbook_exercises.ipynb
+    - title: Homeworks
+      children:
+        - file: hw/hw1_code_cunningham.ipynb
+    - title: Projects
+      children:
+        - file: projects/index.md
+site:
+  template: book-theme
+  projects:
+    - slug: myst
+      path: .
+  domains:
+    - jacob_cunningham-myst_project.curve.space
+  options:
+    favicon: _assets\favicon.ico
+    logo: _assets\logo.svg
+    logo_dark: _assets\logo.svg
+  actions:
+    - title: Syllabus
+      url: _assets/syllabus.pdf
+  nav:
+    - title: Course Home 🏠
+      url: https://canvas.pitt.edu/courses/301800
+    - title: Textbook 📙
+      url: https://tobydriscoll.net/fnc-julia/home.html
+    - title: Lectures 🎞️
+      url: https://www.youtube.com/playlist?list=PLvUvOH0OYx3BcZivtXMIwP6hKoYv0YvGn
+    - title: Resources 📄
+      children:
+        - title: Julia Cheat Sheet
+          url: https://cheatsheet.juliadocs.org/
+        - title: Introduction to Julia Programming
+          url: https://www.youtube.com/watch?v=7hVV5uoEo-0
+        - title: Julia Tutorial Part 1
+          url: https://syl1.gitbook.io/julia-language-a-concise-tutorial
+        - title: Julia Tutorial Part 2
+          url: https://www.matecdev.com/posts/julia-tutorial-science-engineering.html
+        - title: The Julia Express
+          url: https://bogumilkaminski.pl/files/julia_express.pdf
+        - title: Julia by Example
+          url: https://juliabyexample.helpmanual.io/
+        - title: Julia-Python-Matlab Cheat Sheet
+          url: https://cheatsheets.quantecon.org/
+        - title: Julia Academy
+          url: https://juliaacademy.com/courses
+        - title: Julia's Plot Package
+          url: https://docs.juliaplots.org/stable/
+        - title: Plots Cheat Sheet
+          url: https://github.com/sswatson/cheatsheets/blob/master/plotsjl-cheatsheet.pdf
+        - title: Julia's Markdown Syntax
+          url: https://docs.julialang.org/en/v1/stdlib/Markdown/     
