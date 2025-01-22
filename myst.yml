@@ -26,6 +26,31 @@ project:
             - file: modules/module_2/roundoff.ipynb
             - file: modules/module_2/write_a_julia_function.ipynb
             - file: modules/module_2/textbook_exercises.ipynb
+        - title: Interpolation
+          children:
+            - file: modules/module_3/interpolation.md
+            - file: modules/module_3/polynomial_interpolation.md
+            - file: modules/module_3/interpolation_video.md
+            - file: modules/module_3/piecewise_linear_interpolation.md
+            - file: modules/module_3/cubic_spline_interpolation.md
+            - file: modules/module_3/splines.ipynb
+            - file: modules/module_3/1d_lagrange.ipynb
+            - file: modules/module_3/polynomial_exercise.ipynb
+            - file: modules/module_3/approxfun.ipynb
+            - file: modules/module_3/approxfun_modified.ipynb
+        - title: Integration
+          children:
+            - file: modules/module_4/integration.md
+            - file: modules/module_4/numerical_integration.md
+            - file: modules/module_4/adaptive_integration.md
+            - file: modules/module_4/numerical_integration_in_julia.ipynb
+            - file: modules/module_4/symbolic_integration_in_julia.ipynb
+            - file: modules/module_4/quadgk.ipynb
+        - title: Differentiation
+          children:
+            - file: modules/module_5/differentiation.md
+            - file: modules/module_5/symbolic_derivatives_in_julia.ipynb
+            - file: modules/module_5/error_analysis.ipynb
     - title: Homeworks
       children:
         - file: hw/hw1_code_cunningham.ipynb

@@ -4,7 +4,7 @@ title: Home
 
 ## Purpose
 
-This site contains notes, homeworks, and projects from ME 2060: Numerical Methods.
+This site contains notes, homeworks, and projects from the time I took ME 2060: Numerical Methods as a student.
 
 ## Course Objectives
 
