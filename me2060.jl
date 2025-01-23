@@ -208,6 +208,5 @@ module me2060
         if !(n >= 0)
             throw(ArgumentError("n must be greater than or equal to 0."))
         end
-        
-        # 
+     end
 end

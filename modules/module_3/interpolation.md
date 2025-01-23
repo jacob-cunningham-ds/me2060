@@ -38,7 +38,7 @@ For any real data points $\big \{ (x_i, y_i) \big \}^{n}_{i=1}$ with distinct ab
 
 $$
 \begin{equation}
-  p(x_i) &= y_i \qquad i &= 1, \; 2, \; \ldots n
+  p(x_i) = y_i \qquad i = 1, \; 2, \; \ldots n
 \end{equation}
 $$
 :::

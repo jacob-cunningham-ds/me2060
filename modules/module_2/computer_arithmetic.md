@@ -6,6 +6,9 @@ downloads:
     title: computer_arithmetic.md
   - file: ../../assets/computer_arithmetic.pdf
     title: computer_arithmetic.pdf
+kernelspec:
+  name: julia-1.10
+  display_name: 'julia 1.10'
 ---
 
 ## Floating Point Representation for Real Number
@@ -82,6 +85,7 @@ Normalize $71_{10}$ in Base 2
 2. Normalize the mantissa
 
 :::
+
 
 ### Toy Problem
 
