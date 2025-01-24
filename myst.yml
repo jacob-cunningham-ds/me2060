@@ -19,25 +19,32 @@ project:
         - title: Computer Arithmetic
           children:
             - file: modules/module_2/computer_arithmetic.md
-            - file: modules/module_2/floating_point_representation.md
-            - file: modules/module_2/condition_number.md
-            - file: modules/module_2/stability.md
-            - file: modules/module_2/cosine_example.ipynb
-            - file: modules/module_2/roundoff.ipynb
-            - file: modules/module_2/write_a_julia_function.ipynb
-            - file: modules/module_2/textbook_exercises.ipynb
+            - title: Examples & Exercises
+              children:
+                - file: modules/module_2/cosine_example.ipynb
+                - file: modules/module_2/roundoff.ipynb
+                - file: modules/module_2/write_a_julia_function.ipynb
+            - title: Videos
+              children:
+                - file: modules/module_2/floating_point_representation.md
+                - file: modules/module_2/condition_number.md
+                - file: modules/module_2/stability.md
         - title: Interpolation
           children:
             - file: modules/module_3/interpolation.md
-            - file: modules/module_3/polynomial_interpolation.md
-            - file: modules/module_3/interpolation_video.md
-            - file: modules/module_3/piecewise_linear_interpolation.md
-            - file: modules/module_3/cubic_spline_interpolation.md
-            - file: modules/module_3/splines.ipynb
-            - file: modules/module_3/1d_lagrange.ipynb
-            - file: modules/module_3/polynomial_exercise.ipynb
-            - file: modules/module_3/approxfun.ipynb
-            - file: modules/module_3/approxfun_modified.ipynb
+            - title: Examples & Exercises
+              children:
+                - file: modules/module_3/polynomial_exercise.ipynb
+                - file: modules/module_3/splines.ipynb
+                - file: modules/module_3/1d_lagrange.ipynb
+                - file: modules/module_3/approxfun.ipynb
+                - file: modules/module_3/approxfun_modified.ipynb
+            - title: Videos
+              children:
+                - file: modules/module_3/polynomial_interpolation.md
+                - file: modules/module_3/interpolation_video.md
+                - file: modules/module_3/piecewise_linear_interpolation.md
+                - file: modules/module_3/cubic_spline_interpolation.md
         - title: Integration
           children:
             - file: modules/module_4/integration.md
