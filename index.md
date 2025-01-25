@@ -4,7 +4,7 @@ title: Numerical Methods
 
 ## Purpose
 
-This site contains notes, homeworks, and projects from the time I took ME 2060: Numerical Methods as a student.
+This site contains notes, homeworks, and projects from the time I took ME 2060: Numerical Methods as a student. The site was created by myself using the content created by Dr. Inanc Senocak and Dr. Chengnian Xiao.
 
 ## Course Objectives
 
