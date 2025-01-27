@@ -103,4 +103,4 @@ site:
         - title: Plots Cheat Sheet
           url: https://github.com/sswatson/cheatsheets/blob/master/plotsjl-cheatsheet.pdf
         - title: Julia's Markdown Syntax
-          url: https://docs.julialang.org/en/v1/stdlib/Markdown/     
+          url: https://docs.julialang.org/en/v1/stdlib/Markdown/

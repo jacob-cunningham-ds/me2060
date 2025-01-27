@@ -1,5 +1,8 @@
 ---
 title: Numerical Methods
+
+site:
+  hide_outline: true
 ---
 
 ## Purpose
