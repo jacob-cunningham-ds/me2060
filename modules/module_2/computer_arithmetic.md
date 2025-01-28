@@ -337,7 +337,7 @@ $$
 There is no magnification of error.
 :::
 
-::::{prf:example}
+:::{prf:example}
 Calculate $\kappa_{f}(x)$ for $f(x) = \cos{x}$.
 
 $$
@@ -349,6 +349,7 @@ $$
 $$
 
 The condition number is large when $x = a \pi / 2$, where $a$ is an odd integer.
+:::
 
 :::{code-cell} julia
 # Packages used
@@ -374,7 +375,6 @@ plt.title!(ltx.L"Plot of $\tan{x}$ with Highlights at Multiples of $\pi/2$")
 plt.xlabel!(ltx.L"$x$ (radians)")
 plt.ylabel!(ltx.L"\tan{x}")
 :::
-::::
 
 ## Approximations in Scientific Computing
 
@@ -386,6 +386,10 @@ $$
   + \bigg [ f(\hat{x}) - f(x) \bigg ]
 \end{equation*}
 $$
+
+:::{prf:example} Calculate the surface area of Earth
+Approximate the Earth as a sphere which introduces **modeling error**. So we have $\text{Area} = 4 \pi R^{2}$. Say we measure $R \approx 6370$ which introduces **measurement error**. We need to represent $\pi$ and say we use single precision so $\pi = 3.141592$ (**truncation error**). We'll have **rounding errors** due to the finite precision of computer arithmetic.
+:::
 
 ## Stability
 
@@ -403,12 +407,128 @@ We get accurate results when we apply a stable algorithm to a well-conditioned p
 I'm confused by conditioning vs stability.
 :::
 
-:::{warning} TODO 
-Finish out the rest of the notes on stability.
+The algorithm $\tilde{f}(x)$ for problem $f(x)$ has forward error:
+
+$$
+\begin{equation*}
+  \Delta y = \frac{|\tilde{f}(x) - f(x)|}{|f(x)|}
+\end{equation*}
+$$
+
+The algorithm has backward error:
+
+$$
+\begin{equation*}
+  \Delta x = \frac{|\tilde{x} - x|}{|x|}, \; \ni \; \tilde{f}(x) = f(\tilde{x})
+\end{equation*}
+$$
+
+Suppose we have following problem:
+
+$$
+\begin{equation*}
+  f(x) = \cos{x} = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \ldots
+\end{equation*}
+$$
+
+Let's represent $\cos{x}$ with the first two terms in the infinite series:
+
+$$
+\begin{equation*}
+  \hat{y} = \hat{f}(x) = 1 - \frac{x^2}{2!}
+\end{equation*}
+$$
+
+The forward error is then:
+
+$$
+\begin{equation*}
+\begin{align*}
+  \Delta y &= \hat{y} - y \\
+  &= \hat{f}(x) - f(x) \\
+  &= 1 - \frac{x^2}{2!} - \cos{x}
+\end{align*}
+\end{equation*}
+$$
+
+To solve for the backward error we first need to find $\hat{x}$:
+
+$$
+\begin{equation*}
+\begin{align*}
+  \hat{f}(x) &= f(\hat{x}) \\
+  1 - \frac{x^2}{2!} &= \cos{\hat{x}} \\
+  \hat{x} &= \arccos(1 - \frac{x^2}{2!})
+\end{align*}
+\end{equation*}
+$$
+
+The backward error is then:
+
+$$
+\begin{equation*}
+  \Delta x = \arccos(1 - \frac{x^2}{2!}) - 1
+\end{equation*}
+$$
+
+Then for $x = 1$ the forward error is -0.0403 and the backward error is 0.0472.
+
+### Condition Number a Different Perspective
+
+Condition number is a measure of the relative change in the solution with respect to the relative change in the input. **It is a quantitative measure of sensitivity.**
+
+$$
+\begin{equation*}
+  \kappa_{f}(x) = \frac{\frac{|f(x) - f(\tilde{x})|}{|f(x)|}}{\frac{| x - \tilde{x}|}{|x|}} = \frac{\text{relative forward error}}{\text{relative backward error}}
+\end{equation*}
+$$
+
+Condition number bounds the forward error:
+
+$$
+\begin{equation*}
+  |\text{relative forward error}| \leq \kappa_{f}(x) \times |\text{relative backward error}|
+\end{equation*}
+$$
+
+:::{important}
+Recall that:
+
+$$
+\begin{equation*}
+  \kappa_{f}(x) = \bigg | \frac{x f'(x)}{f(x)} \bigg |
+\end{equation*}
+$$
+
+The condition number depends on the input (i.e., $x$).
 :::
 
+Continuing our previous example where $f(x) = \cos{x}$:
 
+$$
+\begin{equation*}
+  \kappa{f}(x) = \frac{\text{relative forward error}}{\text{relative backward error}} \approx 1.58
+\end{equation*}
+$$
 
+$$
+\begin{equation*}
+  \kappa_{f}(x) = \bigg | \frac{x f'(x)}{f(x)} \bigg | =
+  \bigg | \frac{-\sin{1}}{\cos{1}} \bigg | =
+  \tan{1} \approx 1.55741
+\end{equation*}
+$$
+
+:::{note}
+
+If $x$ or $f(x)$ is nearly zero, we can use the **absolute condition number**:
+
+$$
+\begin{equation*}
+  \kappa_{f}(x) = \frac{|f(x) - f(\tilde{x})|}{|x - \tilde{x}|}
+\end{equation*}
+$$
+:::
 
 
 
