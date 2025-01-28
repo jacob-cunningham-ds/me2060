@@ -9,3 +9,6 @@ env/
 
 # Ignore the build folder
 _build/
+
+# Ignore workspaces
+*.jupyterlab-workspace
