@@ -4,12 +4,8 @@ venue: Modules
 downloads:
   - file: interpolation.md
     title: interpolation.md
-  - file: ../../assets/interpolation_part_1.pdf
-    title: interpolation_part_1.pdf
-  - file: ../../assets/interpolation_part_2.pdf
-    title: interpolation_part_2.pdf
-  - file: ../../assets/interpolation_updated.pdf
-    title: interpolation_updated.pdf
+  - file: ../../assets/interpolation_lecture_slides.pdf
+    title: interpolation_lecture_slides.pdf
 ---
 
 ## Interpolation

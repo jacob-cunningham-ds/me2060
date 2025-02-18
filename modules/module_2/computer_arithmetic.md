@@ -4,8 +4,9 @@ venue: Modules
 downloads:
   - file: computer_arithmetic.md
     title: computer_arithmetic.md
-  - file: ../../assets/computer_arithmetic.pdf
-    title: computer_arithmetic.pdf
+  - file: ../../assets/computer_arithmetic_lecture_slides.pdf
+    title: computer_arithmetic_lecture_slides.pdf
+  
 kernelspec:
   name: julia-1.10
   display_name: 'julia 1.10'

@@ -4,10 +4,6 @@ project:
   keywords:
     - Numerical Methods
     - Mechanical Engineering
-  author:
-    - name: Jacob Cunningham
-      email: jjc132@pitt.edu
-      github: jacob-cunningham-ds
   open_access: true
   license: CC-BY-4.0
   subject: ME 2060
@@ -21,8 +17,8 @@ project:
             - file: modules/module_2/computer_arithmetic.md
             - title: Examples & Exercises
               children:
-                - file: modules/module_2/cosine_example.ipynb
-                - file: modules/module_2/roundoff.ipynb
+                - file: modules/module_2/week2_cosine.ipynb
+                - file: modules/module_2/week2_fd_approximation-students.ipynb
                 - file: modules/module_2/write_a_julia_function.ipynb
             - title: Videos
               children:
@@ -34,36 +30,19 @@ project:
             - file: modules/module_3/interpolation.md
             - title: Examples & Exercises
               children:
-                - file: modules/module_3/polynomial_exercise.ipynb
-                - file: modules/module_3/splines.ipynb
-                - file: modules/module_3/1d_lagrange.ipynb
-                - file: modules/module_3/approxfun.ipynb
-                - file: modules/module_3/approxfun_modified.ipynb
+                - file: modules/module_3/inclass_polynomial.ipynb
+                - file: modules/module_3/week3_lagrange.ipynb
+                - file: modules/module_3/week3_inclass_exercise_splines.ipynb
+                - file: modules/module_3/bspline_modified.ipynb
             - title: Videos
               children:
                 - file: modules/module_3/polynomial_interpolation.md
                 - file: modules/module_3/interpolation_video.md
                 - file: modules/module_3/piecewise_linear_interpolation.md
                 - file: modules/module_3/cubic_spline_interpolation.md
-        - title: Integration
-          children:
-            - file: modules/module_4/integration.md
-            - file: modules/module_4/numerical_integration.md
-            - file: modules/module_4/adaptive_integration.md
-            - file: modules/module_4/numerical_integration_in_julia.ipynb
-            - file: modules/module_4/symbolic_integration_in_julia.ipynb
-            - file: modules/module_4/quadgk.ipynb
-        - title: Differentiation
-          children:
-            - file: modules/module_5/differentiation.md
-            - file: modules/module_5/symbolic_derivatives_in_julia.ipynb
-            - file: modules/module_5/error_analysis.ipynb
     - title: Homeworks
       children:
         - file: hw/hw1_code_cunningham.ipynb
-    - title: Projects
-      children:
-        - file: projects/index.md
 site:
   template: book-theme
   options:
