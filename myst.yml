@@ -10,9 +10,9 @@ project:
   github: https://github.com/jacob-cunningham-ds/me2060
   toc:
     - file: index.md
+    - file: modules/module_1/free_learning_resources.md
     - title: Modules
       children:
-        - file: modules/module_1/free_learning_resources.md
         - title: Computer Arithmetic
           children:
             - file: modules/module_2/computer_arithmetic.md
@@ -41,6 +41,25 @@ project:
                 - file: modules/module_3/interpolation_video.md
                 - file: modules/module_3/piecewise_linear_interpolation.md
                 - file: modules/module_3/cubic_spline_interpolation.md
+        - title: Integration
+          children:
+            - file: modules/module_4/integration.md
+            - title: Examples & Exercises
+              children:
+                - file: modules/module_4/numeric_integration.ipynb
+                - file: modules/module_4/symbolics_julia.ipynb
+                - file: modules/module_4/integral_ode_demo.ipynb
+            - title: Videos
+              children:
+                - file: modules/module_4/numerical_integration.md
+                - file: modules/module_4/adaptive_integration.md
+        - title: Differentiation
+          children:
+            - file: modules/module_5/differentiation.md
+            - title: Examples & Exercises
+              children:
+                - file: modules/module_5/symbolics_derivatives_julia.ipynb
+                - file: modules/module_5/error_analysis_fd-inclass.ipynb
     - title: Homeworks
       children:
         - file: hw/hw1_code_cunningham.ipynb

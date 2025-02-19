@@ -4,12 +4,10 @@ venue: Modules
 downloads:
   - file: differentiation.md
     title: differentation.md
-  - file: ../../assets/differentiation.pdf
-    title: differentiation.pdf
-  - file: ../../assets/Notes_Feb_16.pdf
-    title: Notes_Feb_16.pdf
-  - file: ../../assets/Notes_Feb_23.pdf
-    title: Notes_Feb_23.pdf
+  - file: ../../assets/differentiation_lecture_slides.pdf
+    title: differentiation_lecture_slides.pdf
 ---
 
-Notes go here.
+```{important}
+Go over construction of finite difference formulas - probable midterm question.
+```
