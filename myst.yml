@@ -98,7 +98,7 @@ site:
           url: https://cheatsheets.quantecon.org/
         - title: Julia Academy
           url: https://juliaacademy.com/courses
-        - title: Julia's Plot Package
+        - title: Julia's Plot Package 
           url: https://docs.juliaplots.org/stable/
         - title: Plots Cheat Sheet
           url: https://github.com/sswatson/cheatsheets/blob/master/plotsjl-cheatsheet.pdf
