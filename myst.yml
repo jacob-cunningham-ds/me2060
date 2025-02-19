@@ -7,6 +7,7 @@ project:
   open_access: true
   license: CC-BY-4.0
   subject: ME 2060
+  github: https://github.com/jacob-cunningham-ds/me2060
   toc:
     - file: index.md
     - title: Modules
@@ -43,6 +44,7 @@ project:
     - title: Homeworks
       children:
         - file: hw/hw1_code_cunningham.ipynb
+        - file: hw/hw2_code_cunningham.ipynb
 site:
   template: book-theme
   options:
