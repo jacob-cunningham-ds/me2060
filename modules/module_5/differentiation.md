@@ -9,5 +9,5 @@ downloads:
 ---
 
 ```{important}
-Go over construction of finite difference formulas - probable midterm question.
+Go over construction of finite difference formulas - probable midterm question. My guess is Pade approximation.
 ```
