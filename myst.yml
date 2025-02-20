@@ -46,8 +46,8 @@ project:
             - file: modules/module_4/integration.md
             - title: Examples & Exercises
               children:
-                - file: modules/module_4/numeric_integration.ipynb
-                - file: modules/module_4/symbolics_julia.ipynb
+                - file: modules/module_4/numeric_integration_new.ipynb
+                - file: modules/module_4/symbolics_julia_new.ipynb
                 - file: modules/module_4/integral_ode_demo.ipynb
             - title: Videos
               children:
