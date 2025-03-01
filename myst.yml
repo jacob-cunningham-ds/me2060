@@ -64,6 +64,12 @@ project:
       children:
         - file: hw/hw1_code_cunningham.ipynb
         - file: hw/hw2_code_cunningham.ipynb
+    - title: Projects
+      children:
+        - title: Midterm Project
+          children:
+            - file: projects/midterm_project_description.ipynb
+            - file: projects/midterm_animation_demo.ipynb
 site:
   template: book-theme
   options:
