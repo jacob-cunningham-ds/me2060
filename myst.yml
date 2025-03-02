@@ -70,6 +70,9 @@ project:
           children:
             - file: projects/midterm_project_description.ipynb
             - file: projects/midterm_animation_demo.ipynb
+    - title: Self-Study
+      children:
+        - file: self-study/comparing_different_fdms.ipynb
 site:
   template: book-theme
   options:
